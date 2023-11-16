@@ -1,0 +1,417 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        padding: 8px 12px 8px 8px;
+        width: 100vw;
+        background-color: rgb(5, 134, 255);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons{
+        height: 4vh;
+        width: 4vh;
+    }
+    .navtabs{
+        height: 100%;
+        border-radius: 5px;
+        margin: auto 12px auto 0;
+        padding: 1vh;
+        border: 0.5px solid rgb(5, 134, 255);
+        font-size: 3vh;
+        font-family: Oswald;
+        transition-duration: 0.1s;
+    }
+    .menuIcon{
+        background-image: url("https://www.coupa.com/sites/default/files/exec-connects/Hamburger_icon_white.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 5vh;
+        width: 5vh;
+        margin: 0 12px 0 0;
+    }
+    .menuIcon ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: rgb(0, 4, 255);
+        position: absolute;
+        justify-content: center;
+        top: 7vh;
+        width: 18vw;
+        display: none;
+    }
+    .ullinks{
+        color: white;
+        text-decoration: none;
+        font-size: 3vh;
+        font-family: roboto;
+    }
+    .menuIcon ul li{
+        padding: 14px 0 14px 2vh;
+    }
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 3vh;
+        font-family: arial;
+    }
+    .menuIcon ul li:hover{
+        background-color: rgb(138, 202, 255);
+        color: black;
+    }
+    .menuIcon:hover>ul{
+        display: block;
+    }
+    .navlinks{
+        font-family: open sans;
+        text-decoration: none;
+        color: white;
+    }
+    .Lnavbar{
+        padding: 1vh 0 1vh 2vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(0, 102, 255);
+    }
+    .Lnavtabs{
+        border-radius: 5px;
+        padding: 3px;
+        margin: 0 9px 0 0;
+        border: 0.5px solid rgb(0, 102, 255);
+        color: white;
+        font-size: 3vh;
+        font-family: Oswald;
+        transition: border;
+        transition-duration: 0.1s;
+    }
+    .Atext{
+        color: white;
+        text-decoration: none;
+    }
+    .navtabs:hover{
+        border: 0.5px solid white
+    }
+    .Lnavtabs:hover{
+        border: 0.5px solid white;
+    }
+    
+    .BigImg{
+        margin-top: 16vh;
+        background-image: url("BigImage.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 40vh;
+    }
+    .MainStuffs{
+        width: 100vw;
+        align-items: center;
+        background-color: rgb(0, 166, 243);
+        padding: 3vh 0 3vh 0;
+        display: grid;
+        
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+        grid-row-gap: 3vh;
+    }
+    .productstogetsold{
+        background-size: cover;
+        width: 51vh;
+        height: 37vh;
+        background-color: rgb(71, 197, 255);
+    }
+    .laptops{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        grid-column: 1/ span 4;
+        background-color: rgb(71, 197, 255);
+    }
+    .electronics{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        grid-column: 1/ span 4;
+        background-color: rgb(71, 197, 255);
+    }
+    .footer1{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 3vh 3vh;
+        justify-content: space-evenly;
+        font-size: 2vh;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        padding: 7vh 0 7vh 0;
+        background-color: #005ac7;
+        /* height: 30vh; */
+    }
+    .footer2{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+        color: white;
+        padding: 7vh 0 7vh 0;
+        background-color: #005ac7;
+        /* height: 20vh; */
+    }
+    .footer3{
+        width: 100vw;
+        display: grid;
+        grid-gap: 3vh 3vh;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-template-columns: auto auto auto auto auto;
+        font-size: 2vh;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        padding: 7vh 0 7vh 0;
+        background-color: #00326b;
+        /* height: 30vh; */
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image1{
+        height: 37vh;
+        width: 51vh;
+    }
+    .img1{
+        width: 10vw;
+        height: 15vh;
+        background-color: red;
+    }
+    .stuffdiv1{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .img1_1{
+        background-position: center;
+        background-image: url("image\ 1.jpg");
+    }
+    .img1_2{
+        background-position: center;
+        background-image: url("image\ 2.jpg");
+    }
+    .img1_3{
+        background-position: center;
+        background-image: url("image\ 3.jpg");
+    }
+    .img1_4{
+        background-position: center;
+        background-image: url("image\ 4.jpg");
+    }
+    .img2{
+        background-image: url("");
+        background-position: center;
+    }
+    .img3{
+        background-image: url("");
+        background-position: center;
+    }
+    .img4{
+        background-image: url("");
+        background-position: center;
+    }
+    .img5{
+        background-image: url("");
+        background-position: center;
+    }
+    .img6{
+        background-image: url("");
+        background-position: center;
+    }
+    .img7{
+        background-image: url("");
+        background-position: center;
+    }
+    .img8{
+        background-image: url("");
+        background-position: center;
+    }
+    .img9{
+        background-image: url("");
+    }
+    .img10{
+        background-image: url("");
+    }
+    .img11{
+        background-image: url("");
+    }
+    .img12{
+        background-image: url("");
+    }
+    .electronicStuffs{
+        width: 40vh;
+        height: 36vh;
+        background-color: red;
+    }
+    .img13_1{
+        background-repeat: no-repeat;
+        background-size: 40vh 36vh;
+        background-image: url("");
+    }
+    .img13_2{
+        background-repeat: no-repeat;
+        background-size: 40vh 36vh;
+        background-image: url("");
+    }
+    .img13_3{
+        background-repeat: no-repeat;
+        background-size: 40vh 36vh;
+        background-image: url("");
+    }
+    .img13_4{
+        background-repeat: no-repeat;
+        background-size: 40vh 36vh;
+        background-image: url("");
+    }
+    .img13_5{
+        background-repeat: no-repeat;
+        background-size: 40vh 36vh;
+        background-image: url("");
+    }
+    .laptopStuffs{
+        width: 40vh;
+        height: 30vh;
+        background-color: red;
+    }
+    .imglptp_1{
+        background-repeat: no-repeat;
+        background-size: 40vh 30vh;
+        background-image: url("https://m.media-amazon.com/images/I/61WNxdAeAoL._AC_UY218_.jpg");
+        background-position: center;
+    }
+    .imglptp_2{
+        background-repeat: no-repeat;
+        background-size: 40vh 30vh;
+        background-image: url("https://m.media-amazon.com/images/I/61Er61SxBhL._AC_UY218_.jpg");
+        background-position: center;
+    }
+    .imglptp_3{
+        background-repeat: no-repeat;
+        background-size: 40vh 30vh;
+        background-image: url("https://m.media-amazon.com/images/I/61km1VkaCsL._AC_UY218_.jpg");
+        background-position: center;
+    }
+    .imglptp_4{
+        background-repeat: no-repeat;
+        background-size: 40vh 30vh;
+        background-image: url("https://m.media-amazon.com/images/I/51j5Rb1tMUL._AC_UY218_.jpg");
+        background-position: center;
+    }
+    .imglptp_5{
+        background-repeat: no-repeat;
+        background-size: 40vh 30vh;
+        background-image: url("https://m.media-amazon.com/images/I/61IvGo6OKyL._AC_UY218_.jpg");
+        background-position: center;
+    }
+    .hoverOverHome{
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+    }
+    .footerUl{
+        font-size: 2vh;
+        line-height: 4vh;
+        list-style: none;
+    }
+    .Liheader{
+        font-weight: 700;
+        font-size: medium;
+    }
+    .Liheader2{
+        font-size: small;
+        font-weight: 700;
+    }
+    .footerUl2{
+        font-size: 10px;
+        line-height: normal;
+    }
+    .logo2{
+        width: 93px;
+        height: 36px;
+    }
+    .searchDiv{
+        margin-left: auto;
+        margin-right: 7vh;
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+    }
+    .searchBar{
+        font-size: 3vh;
+        border-radius: 10px 0 0 10px;
+        padding-left: 1vh;
+        outline: none;
+        border: none;
+        display: block;
+        height: 6vh;
+        width: 28vw;
+        overflow: hidden;
+    }
+    .searchButton{
+        background-color: rgb(184, 184, 184);
+        border: none;
+        display: block;
+        padding-top: auto;
+        padding-bottom: auto;
+        height: 6vh;
+        width: 6vh;
+        border-radius: 0 10px 10px 0;
+    }
+    .searchButton:hover{
+        background-color: rgb(206, 206, 206);
+    }
+    .searchicon{
+        position: relative;
+        margin: auto;
+        height: 5vh;
+        width: 5vh;
+    }
+    
+    
+    
